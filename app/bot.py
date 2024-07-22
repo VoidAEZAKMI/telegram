@@ -13,21 +13,21 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 #Функция для чтения токена из файла
-def read_token_from_file(filename):
-  try:
-      with open(filename, 'r') as file:
-          token = file.read().strip()
-      return token
-  except FileNotFoundError:
-      logger.error(f"Файл {filename} не найден")
-      return None
-  except Exception as e:
-      logger.error(f"Ошибка при чтении файла {filename}: {e}")
-      return None
-#
-## Ваш токен, полученный от BotFather
-TOKEN_FILE = 'token.txt'
-TOKEN = read_token_from_file(TOKEN_FILE)
+# def read_token_from_file(filename):
+#   try:
+#       with open(filename, 'r') as file:
+#           token = file.read().strip()
+#       return token
+#   except FileNotFoundError:
+#       logger.error(f"Файл {filename} не найден")
+#       return None
+#   except Exception as e:
+#       logger.error(f"Ошибка при чтении файла {filename}: {e}")
+#       return None
+# #
+# ## Ваш токен, полученный от BotFather
+# TOKEN_FILE = 'token.txt'
+TOKEN = '7361283957:AAEEq5hu4uE5RJIBmAVK_U2Lpjd_X_3jSVY'
 
 if not TOKEN:
     logger.error("Токен не может быть пустым")
